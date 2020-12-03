@@ -6,7 +6,7 @@ bool mx_isdigit(char c);
 void mx_printchar(char c);
 
 int main(int argc, char **argv) {
-    for (int i = 1, result = 0; i <= argc; i++) {
+    for (int i = 1, result = 0; i <= argc && argc != 1; i++) {
         if (i == argc) {
             mx_printint(result);
             mx_printchar('\n');
