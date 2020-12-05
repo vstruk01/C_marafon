@@ -1,6 +1,6 @@
 int mx_strncmp(const char *s1, const char *s2, int n) {
     for (;*s1 != '\0' && *s2 != '\0' && n - 1 > 0 && *s1 == *s2; --n, ++s1, ++s2);
-    return *s1 == *s2 ? 0 : *s1 > *s2 ? 1 : -1;
+    return *s1 - *s2;
 }
 
 // #include <stdio.h>
