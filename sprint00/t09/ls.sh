@@ -1,0 +1,1 @@
+ls -lh $1 | awk '{ if ($1 != "total") printf $9 " " $5 "\n"}' 
