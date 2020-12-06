@@ -1,10 +1,8 @@
-#include <stdio.h>
-
 int mx_strlen(const char *s);
 
 char *mx_strcat(char *s1, const char *s2) {
     for (int i = mx_strlen(s1), j = 0; s2[j]; s1[i] = s2[j], ++j, ++i);
-    s1[mx_strlen(s1) + mx_strlen(s2) - 1] = '\0';
+    s1[mx_strlen(s1) + mx_strlen(s2)] = '\0';
     return s1;
 }
 

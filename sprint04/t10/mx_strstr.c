@@ -1,6 +1,9 @@
-#include <stdio.h>
+// #include <stdio.h>
 
 char *mx_strstr(const char *s1, const char *s2) {
+    if (!*s2)
+        return (char*)s1;
+
     for (;s1 && *s1; ++s1) {
         char *s_copy = (char*)s1;
 
@@ -16,12 +19,15 @@ char *mx_strstr(const char *s1, const char *s2) {
 // #include <string.h>
 
 // int main(void) {
+//     printf("%s\n", mx_strstr("bbbbbbb", "g"));
+//     printf("%s\n\n", strstr("bbbbbbbs", "g"));
+    
 //     printf("%s\n", mx_strstr("bbbbbbbs", "s"));
 //     printf("%s\n\n", strstr("bbbbbbbs", "s"));
     
     
-//     printf("%s\n", mx_strstr("strsrrstr", "s"));
-//     printf("%s\n\n", strstr("strsrrstr", "s"));
+//     printf("%s\n", mx_strstr("ab", "b"));
+//     printf("%s\n\n", strstr("ab", "b"));
     
 //     printf("%s\n", mx_strstr("strsrrstr", "st"));
 //     printf("%s\n\n", strstr("strsrrstr", "st"));
