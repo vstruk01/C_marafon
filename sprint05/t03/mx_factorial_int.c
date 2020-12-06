@@ -6,12 +6,13 @@ int mx_factorial_int(int n) {
         if (i == n)
             return result;
     }
-    return 0;
+    return n == 0 ? 1 : 0;
 }
 
 // #include <stdio.h>
 
 // int main() {
+//     printf("0  %d\n", mx_factorial_int(0));
 //     printf("1  %d\n", mx_factorial_int(1));
 //     printf("2  %d\n", mx_factorial_int(2));
 //     printf("3  %d\n", mx_factorial_int(3));
