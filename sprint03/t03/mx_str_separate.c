@@ -12,6 +12,7 @@ void mx_str_separate(const char *str, char delim) {
             break;
         }
     }
+    mx_printchar('\n');
 }
 
 // int main(void) {
