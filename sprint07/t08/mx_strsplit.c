@@ -10,7 +10,7 @@ char *mx_strncpy(char *s1, const char *s2, int len);
 char **mx_strsplit(const char *s, char c) {
     int count_words = 0;
     
-    if (!s || (count_words = mx_count_words(s, c)) <= 0)
+    if (!s || (count_words = mx_count_words(s, c)) < 0)
         return NULL;
     
     char **split = malloc(sizeof(char*) * count_words + 1);
