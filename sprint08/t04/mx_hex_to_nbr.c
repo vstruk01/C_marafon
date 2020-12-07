@@ -16,13 +16,13 @@ unsigned long mx_hex_to_nbr(const char *hex) {
     return result;
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main(void) {
-    printf("nbr = %lu\n", mx_hex_to_nbr("AAAAAAAAAAAAAAA"));
-    printf("nbr = %lu\n", mx_hex_to_nbr("ff"));
-    printf("nbr = %lu\n", mx_hex_to_nbr("0"));
-    printf("nbr = %lu\n", mx_hex_to_nbr("1"));
-    printf("nbr = %lu\n", mx_hex_to_nbr("ffffffffffff"));
-    printf("nbr = %lu\n", mx_hex_to_nbr("f1п"));
-}
+// int main(void) {
+//     printf("nbr = %lu\n", mx_hex_to_nbr("AAAAAAAAAAAAAAA"));
+//     printf("nbr = %lu\n", mx_hex_to_nbr("ff"));
+//     printf("nbr = %lu\n", mx_hex_to_nbr("0"));
+//     printf("nbr = %lu\n", mx_hex_to_nbr("1"));
+//     printf("nbr = %lu\n", mx_hex_to_nbr("ffffffffffff"));
+//     printf("nbr = %lu\n", mx_hex_to_nbr("f1п"));
+// }
