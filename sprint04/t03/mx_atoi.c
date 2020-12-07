@@ -27,22 +27,15 @@ bool mx_isdigit(char c);
 //     return str;
 // }
 
-
 int mx_atoi(const char *str) {
     unsigned long long int result = 0;
     int pos = 0;
     int sign = 1;
 
     for (; mx_isspace(str[pos]); ++pos);
-    if ((str[pos] == '+' || str[pos] == '-') && ++pos)
-        if (str[pos - 1] == '-' && (sign = -1)) {}
-    for (; mx_isdigit(str[pos]); ++pos) {
+    if ((str[pos] == '+' || (str[pos] == '-' && (sign = -1))) && ++pos) {}
+    for (; mx_isdigit(str[pos]); ++pos)
         result = result * 10 + str[pos] - 48;
-        if (sign > 0 && result > 2147483647)
-            return -1;
-        if (sign < 0 && result > 2147483648)
-            return 0;
-    }
     return result * sign;
 }
 
@@ -51,19 +44,25 @@ int mx_atoi(const char *str) {
 // #include <stdio.h>
 
 // int main(void) {
-//     for (int i = 0; i < 1000; i++)
-//         printf("%d\n", mx_atoi(itoa(i)));
-//     for (unsigned int i = 2147483247; i < 2147483647; i++);
-//     printf("%d\n", mx_atoi("2147483647"));
-//     printf("%d\n", mx_atoi("2147483648"));
-//     printf("%d\n", mx_atoi("2147483649"));
-//     printf("%d\n", mx_atoi("-2147483649"));
-//     printf("%d\n", mx_atoi("-2147483650"));
+//     for (long long i = 2157; i < 216748; i++) {}
+//         printf("%d\n", atoi(itoa(i)));
+    // for (unsigned int i = 2147483247; i < 2147483647; i++);
+    // printf("%d\t\t%d\n", mx_atoi("2147483647"), atoi("2147483647"));
+    // printf("%d\t\t%d\n", mx_atoi("2147483648"), atoi("2147483648"));
+    // printf("%d\t\t%d\n", mx_atoi("2147483649"), atoi("2147483649"));
+    // printf("%d\t\t%d\n", mx_atoi("-2147483649"), atoi("-2147483649"));
+    // printf("%d\t\t%d\n", mx_atoi("-2147483650"), atoi("-2147483650"));
+    
+    // printf("%d\n", atoi("2147483647" ));
+    // printf("%d\n", atoi("2147483648" ));
+    // printf("%d\n", atoi("2147483649" ));
+    // printf("%d\n", atoi("-2147483649"));
+    // printf("%d\n", atoi("-2147483650"));
     
         
 
-//     printf("%d\n", atoi(""));
-//     printf("%d\n", atoi("ffff"));
-//     printf("%d\n", mx_atoi(""));
-//     printf("%d\n", mx_atoi("ffff"));
+    // printf("%d\n", atoi(""));
+    // printf("%d\n", atoi("ffff"));
+    // printf("%d\n", mx_atoi(""));
+    // printf("%d\n", mx_atoi("ffff"));
 // }

@@ -2,7 +2,7 @@ char *mx_strncpy(char *dst, char *str, int len) {
     int i = 0;
     
     for (;  i < len && str[i]; dst[i] = str[i], ++i);
-    for (; i < len; dst[i] = '\0', ++i)
+    for (; i < len; dst[i] = '\0', ++i);
     dst[len] = '\0';
     return dst;
 }
