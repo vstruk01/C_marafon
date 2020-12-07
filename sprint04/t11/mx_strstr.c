@@ -1,4 +1,4 @@
-// #include <stdio.h>
+#include <stdio.h>
 
 char *mx_strstr(const char *s1, const char *s2) {
     if (!*s2)
