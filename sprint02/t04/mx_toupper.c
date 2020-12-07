@@ -1,5 +1,5 @@
 int mx_toupper(int c) {
-    return c > 91 ? c - 32 : c;
+    return c >= 'a' && c <= 'z' ? c - 32 : c;
 }
 
 // #include <stdio.h>
