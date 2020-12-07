@@ -1,5 +1,5 @@
 int mx_tolower(int c) {
-    return c < 91 ? c + 32 : c;
+    return c >= 'A' && c <= 'Z' ? c + 32 : c;
 }
 
 // #include <stdio.h>
