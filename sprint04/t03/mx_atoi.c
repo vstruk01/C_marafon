@@ -51,19 +51,19 @@ int mx_atoi(const char *str) {
 // #include <stdio.h>
 
 // int main(void) {
-    // for (int i = 0; i < 1000; i++)
-    //     printf("%d\n", mx_atoi(itoa(i)));
-    // for (unsigned int i = 2147483247; i < 2147483647; i++);
-    // printf("%d\n", mx_atoi("2147483647"));
-    // printf("%d\n", mx_atoi("2147483648"));
-    // printf("%d\n", mx_atoi("2147483649"));
-    // printf("%d\n", mx_atoi("-2147483649"));
-    // printf("%d\n", mx_atoi("-2147483650"));
+//     for (int i = 0; i < 1000; i++)
+//         printf("%d\n", mx_atoi(itoa(i)));
+//     for (unsigned int i = 2147483247; i < 2147483647; i++);
+//     printf("%d\n", mx_atoi("2147483647"));
+//     printf("%d\n", mx_atoi("2147483648"));
+//     printf("%d\n", mx_atoi("2147483649"));
+//     printf("%d\n", mx_atoi("-2147483649"));
+//     printf("%d\n", mx_atoi("-2147483650"));
     
         
 
-    // printf("%d\n", atoi(""));
-    // printf("%d\n", atoi("ffff"));
-    // printf("%d\n", mx_atoi(""));
-    // printf("%d\n", mx_atoi("ffff"));
-}
+//     printf("%d\n", atoi(""));
+//     printf("%d\n", atoi("ffff"));
+//     printf("%d\n", mx_atoi(""));
+//     printf("%d\n", mx_atoi("ffff"));
+// }
